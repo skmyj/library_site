@@ -123,6 +123,7 @@ footer{
     .flex{
       flex-direction: column;/*flexアイテムを縦並びに変更*/
     }
+    h1 { font-size:15pt;}
 }
 
 @media screen and (min-width:768px){
