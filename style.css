@@ -6,7 +6,11 @@
 }
 
 a{
-  color:#ffffff;
+  color:#3d2d18;
+}
+
+p{
+  color:#3d2d18;
 }
 
 #wrap{
@@ -16,9 +20,9 @@ a{
 }
 
 header{
-  padding: 40px;
-  background-color:#3d2d18;
-  color:#ffffff ;
+  padding: 20px;
+  background-color:#ffffff;
+  color:#3d2d18 ;
 }
   header h1{
     margin-right: auto;
@@ -32,12 +36,10 @@ header{
     margin-right: 20px;
   }
 
-.box{
-    display: grid;
-    max-width: 1280px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
- }
+  .hr {
+    border-top: 2px dashed #3d2d18;
+  }
+
 
  section{
   padding: 40px;
@@ -48,6 +50,7 @@ header{
 
   section h1{
     margin-bottom: 12px;
+    color:#3d2d18;
   }
   section p {
     margin-bottom: 40px;
@@ -58,8 +61,8 @@ header{
   }
 
   .img-item {
-    opacity: 80;
-    width: 80%;
+    opacity: 100;
+    width: 100%;
   }
   
   .img-item img {
@@ -70,7 +73,7 @@ header{
   .img-item p {
     text-align: center;
   }
-
+  
 
 .grid {
   display: grid; 
@@ -92,6 +95,7 @@ header{
   overflow: hidden;
   position: relative;
 }
+
 .flex .right {
   margin: 0px 20px 20px 20px;
   padding: 20;
@@ -106,33 +110,26 @@ header{
   margin: 10px 0 0;
   padding: 0;
 }
-
   
   
 footer{
-  padding: 40px;
+  padding: 30px;
   background-color: #3d2d18;
   color:#ffffff;
 }
 
-@media all and (min-width: 1980px) {
-  #wrap {
-    width: 80%;
-    max-width: 1280px;
-    margin: 0;
-    padding: 0;
-  }
-
-@media all and (min-width: 600px) {
-  header{
-    display: flex;
-  }
-    header ul {
-      margin-top: 0;
+@media screen and (max-width:767px) 
+  /*　画面サイズが767px以下の場合読み込む　*/ { 
+    .flex{
+      flex-direction: column;/*flexアイテムを縦並びに変更*/
     }
 }
- 
+
+@media screen and (min-width:768px){
+  /*　画面サイズが768px以上の場合読み込む　*/
+  h1 { font-size:20pt;}
 }
+
 
 html{
   scroll-behavior: smooth;
