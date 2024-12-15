@@ -12,13 +12,7 @@ a{
 
 p{
   color:#3d2d18;
-}
-
-#wrap{
-  margin:auto;
-  width: 100%;
-  padding: 20px;
-  font-family: "Sawarabi Gothic", sans-serif 
+  line-height:150%;
 }
 
 header{
@@ -70,7 +64,7 @@ header{
   
   .img-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   
   .img-item p {
